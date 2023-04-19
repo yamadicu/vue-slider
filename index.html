@@ -30,7 +30,13 @@
                     <div class="prev" @click="prev"></div>
                     <div class="next" @click="next"></div>
                     <div class="thumb">
-                        <img v-for=" (element, index) in gioco.immagine" v-bind:src="element" v-bind:class=" ( imgAttiva == index ) ? 'active' : ' ' " v-bind:alt=" `immagine in mianutura ${index}` ">
+                        <img 
+                        v-for=" (element, index) in gioco.immagine"
+                        v-bind:src="element"
+                        v-bind:class=" ( imgAttiva == index ) ? 'active' : ' ' "
+                        v-bind:alt=" `immagine in mianutura ${index}` "
+                        @click="cambio(index)"
+                        />
                     </div>
                 </div>
 

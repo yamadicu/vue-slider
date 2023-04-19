@@ -52,6 +52,9 @@ createApp({
             if( this.imgAttiva > this.gioco.immagine.length - 1){
                 this.imgAttiva = 0
             }
+        },
+        cambio(i){
+            this.imgAttiva = i
         }
     }
 }).mount('#app')

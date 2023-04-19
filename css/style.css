@@ -40,7 +40,7 @@
 }
 
 .thumb {
-    height: calc((300px) / 5);
+    height: calc(((300px) / 5) - 4px);
     cursor: pointer;
     width: 150px;
 }
