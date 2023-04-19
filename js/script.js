@@ -41,5 +41,17 @@ createApp({
     },
     methods: {
 
+        prev(){
+            this.imgAttiva--
+            if( this.imgAttiva < 0){
+                this.imgAttiva = this.gioco.immagine.length - 1
+            }
+        },
+        next(){
+            this.imgAttiva++
+            if( this.imgAttiva > this.gioco.immagine.length - 1){
+                this.imgAttiva = 0
+            }
+        }
     }
 }).mount('#app')
